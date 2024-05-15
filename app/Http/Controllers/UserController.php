@@ -39,6 +39,8 @@ class UserController extends Controller
             'email'=>$request->email,
             'phone'=>$request->phone,
             'role'=>$request->role,
+            'department'=>$request->department,
+            'position'=>$request->position,
             'password'=>Hash::make($request->password),
         ]);
 
@@ -64,6 +66,8 @@ class UserController extends Controller
             'email'=>$request->email,
             'phone'=>$request->phone,
             'role'=>$request->role,
+            'department'=>$request->department,
+            'position'=>$request->position,
         ]);
 
         //if password filled
